@@ -72,7 +72,6 @@ header{
 .logo{
     font-size: 2.5rem;
     font-weight: 600;
-    cursor: default;
 }
 .logo a{
     color: var(--bg-color);
@@ -448,7 +447,14 @@ footer .footer-first-box .footer-item a:hover{
 
 /* services section design by Malik Muhammad Umair  */
 
-
+.services{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
 .services h2{
     margin-bottom: 2rem;
     font-size: 4.5rem;
@@ -463,7 +469,7 @@ footer .footer-first-box .footer-item a:hover{
     gap: 2rem;
 }
 .services-container .services-box{
-    flex: 1 1 30rem;
+    width: 300px;
     background: var(--second-bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 5px;
@@ -791,48 +797,144 @@ footer .footer-first-box .footer-item a:hover{
 .pashto{
     width: 99%;
     background-color: var(--main-color);
+    animation: spashto 3s;
 }
 .urdu{
     width: 95%;
     background-color: var(--main-color);
+    animation: surdu 4s;
 }
 .english{
     width: 94%;
     background-color: var(--main-color);
+    animation: senglish 5s;
 }
 .arabic{
     width: 83%;
     background-color: var(--main-color);
+    animation: sarabic 6s;
 }
 .korean{
     width: 5%;
     background-color: var(--main-color);
+    animation: skorean 7s;
 }
 .written-pashto{
     width: 90%;
     background-color: var(--main-color);
+    animation: wpashto 3s;
 }
 .written-urdu{
     width: 95%;
     background-color: var(--main-color);
+    animation: wurdu 4s;
 }
 .written-english{
     width: 99%;
     background-color: var(--main-color);
+    animation: wenglish 5s;
 }
 .written-arabic{
     width: 90%;
     background-color: var(--main-color);
+    animation: warabic 6s;
+    box-shadow: var(--main-color);
 }
 .written-korean{
     width: 0%;
     background-color: var(--main-color);
+    animation: wkorean 7s;
+    box-shadow: var(--main-color);
 }
 .detailed-section-languages{
     background-color: var(--second-bg-color);
 }
 .detailed-section-languages .detailed-section-languages-btn{
     margin-top: -5rem;
+}
+
+
+
+/* animation by Malik Muhammad Umair  */
+@keyframes spashto{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 99%;
+    }
+}
+@keyframes surdu{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 95%;
+    }
+}
+@keyframes senglish{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 94%;
+    }
+}
+@keyframes sarabic{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 83%;
+    }
+}
+@keyframes skorean{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 5%;
+    }
+}
+@keyframes wpashto{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes wurdu{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 95%;
+    }
+}
+@keyframes wenglish{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 99%;
+    }
+}
+@keyframes warabic{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes wkorean{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 0%;
+    }
 }
 
 
@@ -916,39 +1018,128 @@ margin-bottom: -10px;
 .html{
     width: 97%;
     background-color: var(--main-color);
+    animation: html 2s;
 }
 .css{
     width: 95%;
     background-color: var(--main-color);
+    animation: css 3s;
 }
 .js{
     width: 3%;
     background-color: var(--main-color);
+    animation: js 4s;
 }
 .bootstrap{
     width: 90%;
     background-color: var(--main-color);
+    animation: bootstrap 5s;
 }
 .react{
     width: 2%;
     background-color: var(--main-color);
+    animation: rect 6s;
 }
 .ms-word{
     width: 87%;
     background-color: var(--main-color);
+    animation: word 7s;
 }
 .powerpoint{
    width: 86%;
    background-color: var(--main-color);
+   animation: powerpoint 8s;
 }
 .ms-excel{
     width: 76%;
    background-color: var(--main-color);
+   animation: excel 9s;
 }
 .stenography{
     width: 93%;
     background-color: var(--main-color);
+    animation: stenography 10s;
 }
+
+
+
+
+/* animation by Malik Muhammad Umair  */
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 97%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 95%;
+    }
+}
+@keyframes js{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 3%;
+    }
+}
+@keyframes bootstrap{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes react{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 2%;
+    }
+}
+@keyframes word{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 87%;
+    }
+}
+@keyframes powerpoint{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 86%;
+    }
+}
+@keyframes excel{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 76%;
+    }
+}
+@keyframes stenography{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 93%;
+    }
+}
+
+
 
 
 
