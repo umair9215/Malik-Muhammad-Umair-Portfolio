@@ -17,7 +17,7 @@
     header .logo a {
         font-size: 15px;
         font-weight: bold;
-        cursor: default;
+        cursor: pointer;
         position: absolute;
         left: 8px;
         top: 20px;
@@ -499,7 +499,15 @@
     /* education ends here  */
 
 
+    .certificates h2 {
+        font-size: 2rem;
+    }
 
+    .certificates-container {
+        grid-template-columns: repeat(1, 300px);
+    }
+
+    /* certificates ends here  */
 
 
     .languages {
@@ -907,6 +915,18 @@
     /* education ends here  */
 
 
+
+    .certificates h2{
+        font-size: 3rem;
+    }
+    .certificates-container{
+        grid-template-columns: repeat(2, 325px);
+    }
+
+
+    /* certificates ends here  */
+
+
     .languages {
         display: grid;
         grid-template-columns: 1fr;
@@ -936,32 +956,39 @@
 
 
 
-    header nav #toggle{
+    header nav #toggle {
         display: none;
     }
-    header{
+
+    header {
         width: 100%;
     }
 }
+
 @media screen and (min-width: 1440px) {
-    
-    
-    header nav #toggle{
+
+
+    header nav #toggle {
         display: none;
     }
-    header{
+
+    header {
         width: 100%;
     }
-    h1{
+
+    h1 {
         font-size: 5rem;
     }
-    h2{
+
+    h2 {
         font-size: 4rem;
     }
-    h3{
+
+    h3 {
         font-size: 3rem;
     }
-    p{
+
+    p {
         font-size: 2rem;
     }
 }
